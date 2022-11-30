@@ -1,0 +1,16 @@
+{
+  "name": "@jesper-kihlberg/atomic-design-primer",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run start -w apps",
+    "build": "npm run build -w apps",
+    "test": "npm run test -w packages/design-system",
+    "test-watch": "npm run test-watch -w packages/design-system",
+    "start-design-system": "npm run start -w packages/design-system",
+    "storybook": "npm run storybook -w packages/design-system-stories"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}
